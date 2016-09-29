@@ -1,0 +1,39 @@
+  <view class="container">
+  <!--下拉框 begin-->
+   <view class='select'>
+      <text>阅读喜好</text>
+      <view>
+        <text>女生小说</text>
+        <image class='arrow' src="../../images/select/arrow-down.png" bindtap="arrowDown"></image>
+      </view>
+    </view>
+
+    <view class='select'>
+      <text>阅读喜好</text>
+      <view>
+        <text>女生小说</text>
+        <image class='arrow' src="../../images/select/arrow-down.png" bindtap="arrowDown"></image>
+      </view>
+    </view>
+
+    <!--下拉框 end-->
+    <view class="section section_gap swiper">
+      <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imageUrl}}">
+          <swiper-item>
+            <view class="swiper-item bc_{{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+   
+    <button type="default" bindtap="actionSheetTap">弹出action sheet</button>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for-items="{{actionSheetItems}}">
+        <action-sheet-item class="item" bindtap="bind{{item}}">{{item}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>
+  </view>

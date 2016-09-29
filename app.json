@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/main/main"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "书城",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "推荐",
+      "iconPath": "images/tabBar/red.png",
+      "selectedIconPath": "images/tabBar/redSel.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "精品",
+      "iconPath": "images/tabBar/star.png",
+       "selectedIconPath": "images/tabBar/starSel.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "排行",
+      "iconPath": "images/tabBar/rank.png",
+       "selectedIconPath": "images/tabBar/rankSel.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000,
+    "uploadFile": 10000,
+    "connectSocket": 10000
+  },
+  "debug": false
+}

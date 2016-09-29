@@ -1,0 +1,21 @@
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.select{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  height: 50rpx;
+  font-size: 25rpx;
+  line-height: 50rpx;
+  background-color: #f6f8f9;
+}
+
+.select .arrow{
+  /*padding: 0 10rpx;*/
+  margin-left: 10rpx;
+  width: 25rpx;
+  height: 25rpx;
+}
